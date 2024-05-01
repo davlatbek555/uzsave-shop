@@ -1,0 +1,83 @@
+.checkout {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &-top{
+        position: absolute;
+        top: -30px;
+    }
+
+    &-wrapper{
+        background-color: $white;
+        border: 1px solid $gray-300;
+        height: fit-content;
+        width: 320px;
+        padding: 40px;
+        margin-bottom: 60px;
+        border-radius: 8px;
+    }
+
+    &-top {
+        margin-bottom: 24px;
+    }
+
+    &-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-wrap{
+        display: flex;
+        margin-bottom: 16px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &-name,
+    &-title,
+    &-pay{
+        margin: 7px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark;
+    }
+
+    &-input{
+        width: 240px;
+        border: 1px solid #DCDCDC;
+        margin: 4px 0;
+        border-radius: 6px;
+        padding: 8px 12px;
+    }
+
+    &-select{
+        width: 240px;
+        padding: 8px 12px;
+        border: 1px solid #DCDCDC;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 400;
+        height: auto;
+        color: $dark;
+        margin: 10px 0;
+    }
+
+    &-payment{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    &-cash{
+        margin-left: 10px;
+        border: 1px solid $primary;
+        width: 30px;
+        height: 20px;
+    }
+
+}

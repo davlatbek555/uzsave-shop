@@ -1,0 +1,61 @@
+.recommended-list {
+    margin: 24px 0;
+
+    &-top{
+        margin-bottom: 24px;
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.2px;
+        }
+    }
+
+    &-item{
+        background-color: $white;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        
+        &s{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: inherit;
+        }
+        border: 1px solid $gray-300;
+        width: 220px;
+        height: 310px;
+        padding: 17px 17px 8px 17px;
+
+        &__image{
+            width: 200px;
+            height: 200px;
+            padding: 8px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__price{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: $dark;
+        }
+        
+        &__subtitle{
+            margin-bottom: 6px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: $gray-500;
+        }
+    }
+    &-item:hover img {
+        scale: 1.05;
+    }
+}
